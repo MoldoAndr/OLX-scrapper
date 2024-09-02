@@ -89,12 +89,10 @@ def search_button_click():
     
     threading.Thread(target=search_thread, daemon=True).start()
 
-# Create the main window
 root = tk.Tk()
 root.title("OLX Search")
 root.geometry("300x150")
 
-# Create and place widgets
 keyword_label = tk.Label(root, text="Enter keyword:")
 keyword_label.pack(pady=10)
 
@@ -107,5 +105,4 @@ search_button.pack(pady=10)
 status_label = tk.Label(root, text="Ready")
 status_label.pack()
 
-# Start the GUI event loop
 root.mainloop()
